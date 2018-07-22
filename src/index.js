@@ -1,13 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Main from './Main';
+
+import ReactDOM, { render } from 'react-dom';
+import Root from './components/Root';
 import registerServiceWorker from './registerServiceWorker';
-import Clock from './Clock';
+import React from 'react';
 
-
-//ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Root />, document.getElementById('root'));
 //ReactDOM.render(<Nav/>, document.getElementById('root1'));
-ReactDOM.render(<Main />, document.getElementById("root"));
+//ReactDOM.render(<Main />, document.getElementById("root"));
+
+
 
 registerServiceWorker();
+
